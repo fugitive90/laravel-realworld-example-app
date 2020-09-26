@@ -4,4 +4,4 @@ WORKDIR /app
 
 COPY . .
 
-RUN composer install
+RUN composer install && chown -R www-data:www-data /app
